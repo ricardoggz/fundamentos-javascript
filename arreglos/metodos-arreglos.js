@@ -20,10 +20,10 @@
 
 //Colección
 const productos = new Array(
-    'Playera',
-    'Pantalón',
-    'Shorts',
-    'Calcetas',
+    'Playera' /*0*/,
+    'Pantalón' /*1*/,
+    'Shorts' /*2*/,
+    'Calcetas' /*3*/,
     /*Corbatas*/
 )
 
@@ -33,6 +33,24 @@ productos.push('Corbatas')
 //Read - Leer
 productos.map((producto)=>console.log(producto))
 
+//Update
+productos.splice(
+    //índice o identificador del elemento
+    3,
+    //número de elementos que voy a actualizar
+    1,
+    //Nuevo elemento
+    'Tenis'
+)
+
+//Delete
+productos.splice(
+    //índice o identificador del elemento
+    0,
+    //número de elementos que voy a eliminar
+    1,
+)
+console.log(productos)
 //2 tipos de funciones
 function ejemplo1(){
     return console.log('Ejemplo')
